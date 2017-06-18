@@ -1,0 +1,29 @@
+<div ng-controller="PanelCtrl">
+    <!--HEADER -->
+    <header class="head">
+        <span class="icoMenu" id="menu" ng-click="panel.toggleMenu()"></span>
+        <h1>BBVA Continental</h1>
+        <span class="tabProveedor"></span>
+    </header>
+    <!--MAIN MENU -->
+    <nav class="mainmenu">
+        <ul ng-if="vUser">
+            <li><a class="icoHome" ui-sref="app.private.benefits" ui-sref-active="active" href="#/">Inicio</a></li>
+            <li><a class="icoStar" ui-sref="app.private.services" ui-sref-active="active" href="#/servicios">Servicios VIP</a></li>
+            <li><a class="icoUser" ui-sref="app.private.participants" ui-sref-active="active" href="#/participantes">Participantes</a></li>
+            <li><a class="icoNote" ui-sref="app.private.profile" ui-sref-active="active" href="#/perfil">Mis Datos</a></li>
+            <li><a class="icoHand" href="">Quiero ser parte</a></li>
+            <li ng-click="panel.logout()"><a class="icoOff" href="">Salir</a></li>
+        </ul>
+        <ul ng-if="!vUser">
+            <li><a class="icoHome" ui-sref="app.login" ui-sref-active="active" href="#/login">Inicio</a></li>
+            <li><a class="icoHand" href="">Quiero ser parte</a></li>
+        </ul>
+    </nav>
+
+    <!--FOOTER -->
+    <footer class="footer" style="color: rgb(70,70,70)">
+        BBVA Continental S.A. 2016. Si tienes cualquier duda o consulta,
+        comunícate con nuestra Bancapor teléfono (01) 595-0000 y Provincia: 0800-1008
+    </footer>
+</div>

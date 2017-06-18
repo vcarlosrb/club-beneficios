@@ -1,0 +1,113 @@
+<div ng-controller="ProfileCtrl">
+
+    <!--PAGE: REGISTRO -->
+    <section class="boxRegistro">
+        <div class="contLoad" style="display: block">
+            <div class="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                    <circle class="pathBlue" cx="50" cy="50" r="20" fill="none" stroke-width="3"
+                            stroke-miterlimit="10"/>
+                </svg>
+            </div>
+        </div>
+        <div class="modRegistro" style="display: none">
+            <h3>Bienvenido {{profileData.contacto.nombre}},</h3>
+            <p>Ahora que eres parte de Mundo Proveedor, por favor ingresa los siguientes datos:</p>
+
+            <!--FORM -->
+            <form id="form1" name="form1">
+
+                <!--BLOCK 01 -->
+                <div class="blockForm">
+
+                    <div class="tabForm">
+                        <h4>Datos de la Empresa</h4>
+                    </div>
+
+                    <div class="cLeft">
+                        <input class="txtEmpresa" type="text" name="companyName" ng-model="profileData.empresa.nombre"
+                               placeholder="Empresa">
+                        <input class="txtRUC" type="text" name="companyRuc" ng-model="profileData.empresa.ruc"
+                               placeholder="RUC">
+
+                        <div class="inDate">
+                            <span>{{profileData.empresa.aniversario}}</span>
+                            <div class="btnDate">
+                                <div class="showDate" ng-click="datePicker.toggle()">Fecha</div>
+                                <div id="datepicker"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cRight">
+                        <input class="txtLugar" type="text" name="companyAddress"
+                               ng-model="profileData.empresa.direccion" placeholder="Dirección">
+                        <div id="map" style="width: 100%; height: 120px"></div>
+                    </div>
+
+                    <!--CLEAR FIX -->
+                    <div class="clear"></div>
+
+                </div>
+
+                <!--BLOCK 02 -->
+                <div class="blockForm">
+
+                    <div class="tabForm">
+                        <h4>Datos Personales</h4>
+                    </div>
+
+                    <div class="cLeft">
+                        <input class="txtNombre" type="text" name="userName" ng-model="profileData.contacto.nombre"
+                               placeholder="Nombres">
+                        <input class="txtEmail" type="email" name="userEmail" ng-model="profileData.contacto.email"
+                               placeholder="Email">
+                        <input class="txtFono" type="text" name="userPhone" ng-model="profileData.contacto.telefono"
+                               placeholder="Teléfono">
+                    </div>
+
+                    <div class="cRight">
+                        <div class="inDate"
+                             style="background: #fff url(assets/images/registro/ico_cumple.png) no-repeat 15px 50%;">
+                            <span>{{profileData.contacto.cumple}}</span>
+                            <div class="btnDate">
+                                <div class="showDate" ng-click="datePicker2.toggle()">Fecha</div>
+                                <div id="datepicker2"></div>
+                            </div>
+                        </div>
+                        <input class="txtPassword" ng-class="{true: 'inputError'}[valPass]" type="password"
+                               name="password" placeholder="Contraseña" ng-model="password.new">
+                        <input class="txtPassword" ng-class="{true: 'inputError'}[valPass]" type="password"
+                               name="password2" placeholder="Repetir contraseña" ng-model="password.repeat">
+                    </div>
+
+                    <!--CLEAR FIX -->
+                    <div class="clear"></div>
+
+                    <!--BUTTONS -->
+                    <div class="wrpButton">
+                        <div class="wbFade">
+                            <div class="bttn btnPurple" ng-click="profile.save(profileData, password)">Guardar</div>
+                            <div class="bttn btnPurple" ng-click="profile.cancel()">Cancelar</div>
+                        </div>
+                        <div class="btnLoader">
+                            <div class="loader">
+                                <svg class="circular" viewBox="25 25 50 50">
+                                    <circle class="pathBlue" cx="50" cy="50" r="20" fill="none" stroke-width="3"
+                                            stroke-miterlimit="10"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="messageSuccess">Datos guardados</div>
+                        <!--CLEAR FIX -->
+                        <div class="clear"></div>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+</div>

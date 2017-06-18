@@ -1,0 +1,59 @@
+<div ng-controller="DetailbenefitCtrl">
+
+    <section class="wrapInner">
+        <div class="pageInner">
+            <!--PROMO DETAILS -->
+            <div class="pageDetails">
+
+                <div class="contLoad" style="display: block">
+                    <div class="loader">
+                        <svg class="circular" viewBox="25 25 50 50">
+                            <circle class="pathBlue" cx="50" cy="50" r="20" fill="none" stroke-width="3"
+                                    stroke-miterlimit="10"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="pdContent" style="display: none">
+                    <!--TITLE -->
+                    <div class="titleDetail">
+                        <a href="" ng-click="benefit.goBack()">Back</a>
+                        <h3>{{benefitData.tienda}}</h3>
+                        <!--CLEAR FIX -->
+                        <div class="clear"></div>
+                    </div>
+
+                    <!--DESCRIPTION -->
+                    <div class="wrapDetail">
+                        <!--PICTURE -->
+                        <div class="picDetail"><img src="{{benefitData.imagen}}" alt=""></div>
+                        <!--INFO -->
+                        <div class="infoDetail">
+                            <h4>{{benefitData.descripcion}}</h4>
+                            <p class="subtitle">Contacto:</p>
+                            <ul>
+                                <li class="icoContact">{{benefitData.contacto.nombre}}</li>
+                                <li class="icoEmail">
+                                    <span ng-repeat="item in benefitData.contacto.email track by $index">{{item}} <br> </span>
+                                </li>
+                                <li class="icoPhone">
+                                    <span
+                                        ng-repeat="item in benefitData.contacto.telefono track by $index">{{item}} <br> </span>
+                                </li>
+                            </ul>
+                            <p class="subtitle">Restricciones:</p>
+                            <p class="getConstraint">{{benefitData.restricciones}}</p>
+                        </div>
+                        <!--CLEAR FIX -->
+                        <div class="clear"></div>
+                        <!--MAPS -->
+                        <div class="promoMap">
+                            <div id="map" style="height: 250px; width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</div>

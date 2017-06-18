@@ -1,0 +1,191 @@
+/*********************************************************************
+*** PAGE: PROMOTIONS *************************************************
+*********************************************************************/
+.wrapInner {
+    /*  background: orange;*/
+    display: block;
+}
+
+.pageInner {
+    /*  background: yellow;*/
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 1140px;
+    @include responsive('1300px') {
+        width: 90%;
+    }
+    @include responsive('400px') {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* - MODULE: FILTERS - */
+.modFilters {
+    background: #4a4a4d;
+    font-family: "font1", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #fff;
+}
+
+.listCateg {
+    display: block;
+    @include responsive('1200px') {
+        display: none;
+    }
+}
+
+.movListCateg {
+    background: transparent url(/html/assets/images/arrow_select.png) no-repeat 100% 50%;
+    font-size: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+    float: left;
+    overflow: hidden;
+    padding: 0px 30px 0px 20px;
+    height: 60px;
+    width: 150px;
+}
+
+.modFilters {
+    position: relative;
+    .respCategory {
+        display: none;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        left: 0;
+        background-color: #4a4a4d;
+        border-top: 2px solid rgb(70,70,70);
+        @include responsive('600px') {
+            top: 120px;
+        }
+        li {
+            display: block;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    }
+}
+
+.modFilters .listCateg li {
+    background: transparent url(/html/assets/images/mini_separator.png) no-repeat 100% 50%;
+    font-weight: normal;
+    cursor: pointer;
+    color: #fff;
+    line-height: 60px;
+    display: block;
+    float: left;
+    padding: 0px 22px;
+    text-decoration: none;
+    -webkit-transition: background .5s ease 0s;
+    -moz-transition: background .5s ease 0s;
+    transition: background .5s ease 0s;
+}
+
+.modFilters .listCateg li:hover,
+.modFilters .listCateg li.btnAct {
+    background: #c70063;
+}
+
+/* - MODULE: SEARCH - */
+.modSearch {
+    background: #0070ba url(/html/assets/images/ico_lupa.png) no-repeat 100% 50%;
+    display: block;
+    float: right;
+    height: 60px;
+    width: 280px;
+    padding-top: 12px;
+    padding-right: 55px;
+    padding-left: 20px;
+    @include responsive('600px') {
+        width: 100%;
+    }
+}
+
+.modSearch input {
+    background: #0070ba;
+    font-family: "font1", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #fff;
+    border: 1px #0070ba solid;
+    padding: 2%;
+    outline: none;
+    width: 94%;
+}
+
+.movListCateg {
+    @include responsive('1200px') {
+        display: block;
+    }
+    @include responsive('600px') {
+        width: 100%;
+        background: transparent url(/html/assets/images/arrow_select.png) no-repeat 95% 50%;
+    }
+}
+
+/* - PROMOCIONES - */
+.itemPromo {
+    background: #ebebeb;
+    display: block;
+    float: left;
+    border: 1px #d9d9d9 solid;
+    margin: .9%;
+    width: 31.3333%;
+    @include responsive('900px') {
+        width: 48.2%;
+    }
+    @include responsive('600px') {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+.itemPromo img {
+    display: block;
+    width: 100%;
+}
+
+.desPromo {
+    font-family: "font1", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #737373;
+    line-height: 16px;
+    display: block;
+    height: 80px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.desPromo h3 a {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #004c93;
+    display: block;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.emptyContent {
+    display: none;
+    text-align: center;
+    p {
+        color: #A2A2A2;
+        font-family: font2;
+        font-size: 25px;
+        margin: 0;
+        padding: 100px 0;
+        @include responsive('600px') {
+            font-size: 18px;
+        }
+    }
+}
+
+/*********************************************************************
+*** CLEAR FIX ********************************************************
+*********************************************************************/
+.clear {
+    clear: both;
+}

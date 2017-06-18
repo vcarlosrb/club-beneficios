@@ -1,0 +1,33 @@
+<div ng-controller="LoginCtrl" class="contLogin">
+    <!--PAGE: BIENVENIDO -->
+    <section class="boxPopup">
+        <div class="modLogin">
+            <h3>¡Bienvenido!</h3>
+            <p>Ingresa tus datos y disfruta de todo un mundo de beneficios que tenemos para ti. Si quieres ser miembro
+                de
+                mundo emprendedor <a href="#">haz clic aquí.</a></p>
+            <!--FORM LOGIN -->
+            <div class="formLogin">
+                <form id="form1" name="form1">
+                    <input class="txtCamp01" type="text" name="email" placeholder="Email" ng-model="user.email"
+                           ng-class="{true: 'inputError'}[valEmail]">
+                    <input class="txtCamp02" type="password" name="password" placeholder="Contraseña"
+                           ng-model="user.password"
+                           ng-class="{true: 'inputError'}[valPassword]">
+                    <div>
+                        <div class="bttn btnBlue">
+                            <span id="btnLogin" ng-click="login.buildData()">Ingresar</span>
+                            <div class="loader">
+                                <svg class="circular" viewBox="25 25 50 50">
+                                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3"
+                                            stroke-miterlimit="10"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="noteError">Verifica si tu email o contraseña son correctas</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>

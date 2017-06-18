@@ -1,0 +1,85 @@
+/*********************************************************************
+*** PAGE: PROMOTIONS DETAILS *****************************************
+*********************************************************************/
+
+
+/* - TITLE - */
+.titleDetail {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.titleDetail a {
+    background: transparent url(/html/assets/images/ico_back.png) no-repeat 0% 50%;
+    font-size: 1px;
+    color: #fff;
+    display: block;
+    float: left;
+    height: 30px;
+    width: 35px;
+    text-decoration: none;
+    text-indent: -9999px;
+}
+
+.titleDetail h3 {
+    font-family: "font1", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #004c93;
+    line-height: 30px;
+    display: block;
+    float: left;
+}
+
+
+.subtitle {
+    font-family: "font1", Arial, Helvetica, sans-serif;
+}
+
+.icoContact {
+    background: transparent url(/html/assets/images/ico_contact.png) no-repeat 0% 2px;
+}
+
+.icoEmail {
+    background: transparent url(/html/assets/images/ico_email.png) no-repeat 0% 2px;
+}
+
+.icoPhone {
+    background: transparent url(/html/assets/images/ico_fono.png) no-repeat 0% 2px;
+}
+
+.icoGeo {
+    background: transparent url(/html/assets/images/ico_globo.png) no-repeat 0% 2px;
+}
+
+.icoCalendar {
+    background: transparent url(/html/assets/images/ico_calendar.png) no-repeat 0% 2px;
+}
+
+/* - MAP - */
+.promoMap {
+    display: block;
+    padding-top: 20px;
+}
+
+.promoMap iframe {
+    border: 1px #d9d9d9 solid;
+    height: 180px;
+    width: 98%;
+}
+
+/* - BUTTON CALL - */
+.btnCall {
+    background: #004c93 url(/html/assets/images/ico_call.png) no-repeat 20px 50%;
+    font-family: "font1", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #fff;
+    line-height: 48px;
+    display: block;
+    padding-left: 54px;
+    text-decoration: none;
+    width: 144px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

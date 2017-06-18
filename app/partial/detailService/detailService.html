@@ -1,0 +1,57 @@
+<div ng-controller="DetailserviceCtrl">
+
+    <section class="wrapInner">
+        <div class="pageInner">
+            <!--PROMO DETAILS -->
+            <div class="pageDetails">
+
+                <div class="contLoad" style="display: block">
+                    <div class="loader">
+                        <svg class="circular" viewBox="25 25 50 50">
+                            <circle class="pathBlue" cx="50" cy="50" r="20" fill="none" stroke-width="3"
+                                    stroke-miterlimit="10"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="pdContent" style="display: none">
+                    <!--CALL -->
+                    <a class="btnCall" href="">Contactar</a>
+
+                    <!--TITLE -->
+                    <div class="titleDetail">
+                        <a href="" ng-click="service.goBack()">Back</a>
+                        <h3>{{serviceData.tienda}}</h3>
+                        <!--CLEAR FIX -->
+                        <div class="clear"></div>
+                    </div>
+
+                    <!--DESCRIPTION -->
+                    <div class="wrapDetail">
+                        <!--PICTURE -->
+                        <div class="picDetail"><img src="{{serviceData.imagen}}" alt=""></div>
+                        <!--INFO -->
+                        <div class="infoDetail">
+                            <p><span class="subtitle">Servicios:</span></p>
+                            <p>{{serviceData.descripcion}}</p>
+                            <p class="subtitle">Información:</p>
+                            <ul>
+                                <li class="icoCalendar">{{serviceData.horario}}</li>
+                                <li class="icoEmail"><a href="">{{serviceData.email}}</a></li>
+                                <li class="icoPhone">{{serviceData.telefono}}</li>
+                                <li class="icoGeo">{{serviceData.local.direccion}}</li>
+                            </ul>
+                        </div>
+                        <!--CLEAR FIX -->
+                        <div class="clear"></div>
+                        <!--MAPS -->
+                        <div class="promoMap">
+                            <div id="map" style="height: 250px; width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</div>

@@ -1,0 +1,243 @@
+/*********************************************************************
+*** PAGE: REGISTRO ***************************************************
+*********************************************************************/
+.boxRegistro {
+    background: transparent url(/html/assets/images/bg_box.png) repeat 0% 0%;
+    margin: 50px auto;
+    display: block;
+    width: 1140px;
+    @include responsive('1300px') {
+        width: 90%;
+    }
+    @include responsive('600px') {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.modRegistro {
+    font-family: "StagSansLight", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #404040;
+    line-height: 20px;
+    display: block;
+    padding: 50px 35px 35px 35px;
+    @include responsive('600px') {
+        padding: 30px 20px;
+    }
+}
+
+.modRegistro h3 {
+    background: transparent url(/html/assets/images/line_title.jpg) no-repeat 0% 0%;
+    font-family: "StagSansBook", Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+    color: #404040;
+    line-height: 42px;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 12px;
+}
+
+.blockForm {
+    display: block;
+    padding-top: 20px;
+}
+
+.tabForm {
+    display: block;
+    border-bottom: 1px #004c93 solid;
+}
+
+.tabForm h4 {
+    background: #004c93;
+    font-family: "StagSansBook", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 48px;
+    display: block;
+    text-align: center;
+    width: 200px;
+    @include responsive('600px') {
+        width: 100%;
+    }
+}
+
+.cLeft {
+    display: block;
+    float: left;
+    padding-top: 15px;
+    padding-right: 3%;
+    width: 47%;
+    @include responsive('800px') {
+        width: 100%;
+        padding-right: 0;
+    }
+}
+
+.cRight {
+    display: block;
+    float: left;
+    padding-top: 15px;
+    width: 50%;
+    @include responsive('800px') {
+        width: 100%;
+    }
+}
+
+.txtEmpresa, .txtRUC, .txtAniversario, .txtLugar,
+.txtNombre, .txtEmail, .txtFono, .txtCumple, .txtPassword {
+    font-family: "StagSansBook", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #737373;
+    display: block;
+    border: 1px #cccccc solid;
+    margin-bottom: 15px;
+    padding: 15px 3% 15px 50px;
+    outline: none;
+    width: 84%;
+    @include responsive('800px') {
+        width: 100%;
+    }
+}
+
+.txtEmpresa {
+    background: #fff url(/html/assets/images/registro/ico_empresa.png) no-repeat 15px 50%;
+}
+
+.txtRUC {
+    background: #fff url(/html/assets/images/registro/ico_ruc.png) no-repeat 15px 50%;
+}
+
+.txtAniversario {
+    background: #fff url(/html/assets/images/registro/ico_aniversario.png) no-repeat 15px 50%;
+}
+
+.txtLugar {
+    background: #fff url(/html/assets/images/registro/ico_lugar.png) no-repeat 15px 50%;
+}
+
+.txtNombre {
+    background: #fff url(/html/assets/images/registro/ico_user.png) no-repeat 15px 50%;
+}
+
+.txtEmail {
+    background: #fff url(/html/assets/images/registro/ico_correo.png) no-repeat 15px 50%;
+}
+
+.txtFono {
+    background: #fff url(/html/assets/images/registro/ico_fono.png) no-repeat 15px 50%;
+}
+
+.txtCumple {
+    background: #fff url(/html/assets/images/registro/ico_cumple.png) no-repeat 15px 50%;
+}
+
+.txtPassword {
+    background: #fff url(/html/assets/images/registro/ico_password.png) no-repeat 15px 50%;
+}
+
+.txtMapa {
+    display: block;
+    border: 1px #cccccc solid;
+    height: 110px;
+    width: 96%;
+}
+
+.wrpButton {
+    display: block;
+    padding-top: 10px;
+    @include responsive('600px') {
+        text-align: center;
+    }
+    .bttn {
+        @include responsive('600px') {
+            display: inline-block;
+        }
+    }
+    .btnLoader {
+        display: none;
+    }
+}
+
+.btnSave {
+    background: #cb1e60;
+    font-family: "StagSansBook", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #fff;
+    line-height: 40px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    border: 1px #cb1e60 solid;
+    margin-right: 10px;
+    outline: none;
+    width: 126px;
+}
+
+.btnCancel {
+    background: #cb1e60;
+    font-family: "StagSansBook", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #fff;
+    line-height: 40px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    border: 1px #cb1e60 solid;
+    outline: none;
+    width: 126px;
+}
+
+.inDate {
+    background: #fff url(/html/assets/images/registro/ico_aniversario.png) no-repeat 15px 50%;
+    font-family: "StagSansBook", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #737373;
+    display: block;
+    border: 1px #cccccc solid;
+    margin-bottom: 15px;
+    padding: 15px 3% 15px 50px;
+    outline: none;
+    width: 84%;
+    @include responsive('800px') {
+        width: 100%;
+    }
+}
+
+.btnDate {
+    float: right;
+    margin-top: -5px;
+    position: relative;
+    .showDate {
+        cursor: pointer;
+        color: white;
+        background-color: #004c93;
+        padding: 5px 10px;
+        border-radius: 2px;
+        width: 62px;
+        text-align: center;
+    }
+    #datepicker, #datepicker2 {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        z-index: 10;
+    }
+}
+
+.messageSuccess {
+    display: none;
+    background-color: #5A84AB;
+    color: white;
+    border-radius: 2px;
+    border: 1px solid #004c93;
+    text-align: center;
+    font-family: font2;
+    padding: 3px 0;
+    font-weight: bold;
+    font-size: 14px;
+    width: 200px;
+    margin: 0 auto;
+}

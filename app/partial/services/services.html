@@ -1,0 +1,39 @@
+<div ng-controller="ServicesCtrl">
+
+    <!--PAGE: SERVICES VIP -->
+    <section class="wrapInner">
+        <div class="pageInner">
+
+            <div class="contLoad" style="display: block">
+                <div class="loader">
+                    <svg class="circular" viewBox="25 25 50 50">
+                        <circle class="pathBlue" cx="50" cy="50" r="20" fill="none" stroke-width="3"
+                                stroke-miterlimit="10"/>
+                    </svg>
+                </div>
+            </div>
+            <!--SERVICES VIP -->
+            <div class="pagePromo" style="display: none">
+                <div class="itemServices" ng-repeat="item in services">
+                    <div class="picServices">
+                        <a href="" ng-click="service.goDetail(item.id)"
+                           style="background-image: url({{item.imagen}})"></a>
+                    </div>
+                    <div class="desServices">
+                        <div class="marg">
+                            <h3><a href="">{{item.tienda}}</a></h3>
+                            <p><span>Servicios:</span></p>
+                            <p>{{item.descripcion}}</p>
+                            <p><span>Horario:</span> {{item.horario}}</p>
+                            <p><span>Telefono:</span> {{item.telefono}}</p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+    </section>
+
+</div>

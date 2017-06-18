@@ -1,0 +1,50 @@
+<div ng-controller="HomeCtrl">
+    <section class="wrapInner">
+        <div class="pageInner">
+            <!--MODULE: FILTERS -->
+            <div class="modFilters">
+                <!--WEB: LIST CATEGORIES -->
+                <ul class="listCateg">
+                    <li ng-click="category.select($event, 0)" class="btnAct" ng-class="">Todos</li>
+                    <li ng-repeat="item in categories" ng-click="category.select($event, item.id)">{{item.nombre}}</li>
+                </ul>
+                <!--SEARCH -->
+                <div class="modSearch">
+                    <input type="text" name="textfield" id="search" ng-keypress="search.keyPress($event)"
+                           placeholder="Búsqueda">
+                </div>
+                <!--MOVIL: LIST CATEGORIES -->
+                <div class="movListCateg" ng-click="home.toggleMenu()">Categorias</div>
+                <ul class="respCategory">
+                    <li ng-click="category.select($event, 0)" class="btnAct" ng-class="">Todos</li>
+                    <li ng-repeat="item in categories" ng-click="category.select($event, item.id)">{{item.nombre}}</li>
+                </ul>
+                <!--CLEAR FIX -->
+                <div class="clear"></div>
+            </div>
+
+            <!--PROMOTIONS -->
+            <div class="contLoad" id="loadList" style="display: block">
+                <div class="loader">
+                    <svg class="circular" viewBox="25 25 50 50">
+                        <circle class="pathBlue" cx="50" cy="50" r="20" fill="none" stroke-width="3"
+                                stroke-miterlimit="10"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="pagePromo" style="display: none">
+                <div class="itemPromo" ng-repeat="item in benefits" ng-click="home.goDetail(item.id)">
+                    <a href=""><img src="{{item.imagen}}" alt=""></a>
+                    <div class="desPromo">
+                        <h3><a href="">{{item.tienda}}</a></h3>
+                        <p>{{item.descripcion}}</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="emptyContent">
+                <p>No hay servicios para mostrar.</p>
+            </div>
+        </div>
+    </section>
+</div>

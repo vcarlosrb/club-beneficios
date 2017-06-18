@@ -1,0 +1,167 @@
+/*********************************************************************
+*** PAGE: PROMOTIONS DETAILS *****************************************
+*********************************************************************/
+.pageDetails {
+    background: #ebebeb;
+    display: block;
+    border: 1px #d9d9d9 solid;
+    margin-top: 20px;
+    padding: 20px 30px;
+    position: relative;
+    @include responsive('400px') {
+        margin: 0;
+        padding: 20px;
+    }
+}
+
+/* - TITLE - */
+.titleDetail {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.titleDetail a {
+    background: transparent url(/html/assets/images/ico_back.png) no-repeat 0% 50%;
+    font-size: 1px;
+    color: #fff;
+    display: block;
+    float: left;
+    height: 30px;
+    width: 35px;
+    text-decoration: none;
+    text-indent: -9999px;
+}
+
+.titleDetail h3 {
+    font-family: "font1", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #004c93;
+    line-height: 30px;
+    display: block;
+    float: left;
+}
+
+/* - INFO - */
+.wrapDetail {
+    display: block;
+}
+
+.picDetail {
+    display: block;
+    float: left;
+    padding-right: 3%;
+    width: 42%;
+    @include responsive('800px') {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+}
+
+.picDetail img {
+    display: block;
+    width: 100%;
+}
+
+.infoDetail {
+    font-family: "font2", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    color: #737373;
+    display: block;
+    float: left;
+    width: 55%;
+    @include responsive('800px') {
+        width: 100%;
+    }
+}
+
+.infoDetail h4 {
+    font-family: "font1", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    display: block;
+    line-height: 20px;
+    padding-bottom: 12px;
+}
+
+.infoDetail h4 span {
+    display: block;
+}
+
+.infoDetail p {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.infoDetail ul {
+    display: block;
+    padding-bottom: 15px;
+}
+
+.infoDetail ul li {
+    display: block;
+    padding: 6px 0px 6px 30px;
+}
+
+.infoDetail ul li a {
+    color: #737373;
+    text-decoration: none;
+}
+
+.infoDetail ul li a:hover {
+    text-decoration: underline;
+}
+
+.subtitle {
+    font-family: "font1", Arial, Helvetica, sans-serif;
+}
+
+.icoContact {
+    background: transparent url(/html/assets/images/ico_contact.png) no-repeat 0% 2px;
+}
+
+.icoEmail {
+    background: transparent url(/html/assets/images/ico_email.png) no-repeat 0% 2px;
+}
+
+.icoPhone {
+    background: transparent url(/html/assets/images/ico_fono.png) no-repeat 0% 2px;
+}
+
+.icoGeo {
+    background: transparent url(/html/assets/images/ico_globo.png) no-repeat 0% 2px;
+}
+
+.icoCalendar {
+    background: transparent url(/html/assets/images/ico_calendar.png) no-repeat 0% 2px;
+}
+
+/* - MAP - */
+.promoMap {
+    display: block;
+    padding-top: 20px;
+}
+
+.promoMap iframe {
+    border: 1px #d9d9d9 solid;
+    height: 180px;
+    width: 98%;
+}
+
+/* - BUTTON CALL - */
+.btnCall {
+    background: #004c93 url(/html/assets/images/ico_call.png) no-repeat 20px 50%;
+    font-family: "font1", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #fff;
+    line-height: 48px;
+    display: block;
+    padding-left: 54px;
+    text-decoration: none;
+    width: 90px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

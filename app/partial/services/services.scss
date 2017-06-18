@@ -1,0 +1,120 @@
+/*********************************************************************
+*** PAGE: SERVICES VIP ***********************************************
+*********************************************************************/
+.itemServices {
+    background: #ededed;
+    font-family: "font2", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #737373;
+    line-height: 16px;
+    display: block;
+    float: left;
+    border: 1px #d9d9d9 solid;
+    margin: .7%;
+    width: 48%;
+    height: 260px;
+    @include responsive('800px') {
+        width: 90%;
+        float: none;
+        margin: 0 auto 10px;
+        &:first-child {
+            margin-top: 10px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    @include responsive('600px') {
+        width: 100%;
+    }
+}
+
+/* - PICTURE - */
+.picServices {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.picServices a {
+    height: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center;
+}
+
+/* - DESCRIPTION - */
+.desServices {
+    display: block;
+    float: left;
+    overflow: hidden;
+    width: 50%;
+}
+
+.desServices h3 {
+    font-family: "font1", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #004c93;
+    line-height: 18px;
+    display: block;
+    padding-bottom: 5px;
+}
+
+.desServices h3 a {
+    color: #004c93;
+    text-decoration: none;
+}
+
+.desServices p {
+    display: block;
+    padding-bottom: 5px;
+}
+
+.desServices p span {
+    font-family: "font1", Arial, Helvetica, sans-serif;
+}
+
+.desServices p a {
+    color: #737373;
+    text-decoration: none;
+}
+
+.desServices p a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    font-family: "font1", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+.btnPurple {
+    background: #cb1e60;
+    color: #fff;
+    line-height: 42px;
+    border: 1px #cb1e60 solid;
+    width: 126px;
+    height: 42px;
+}
+
+.btnBlue {
+    background: #004c93;
+    color: #fff;
+    line-height: 42px;
+    border: 1px #004c93 solid;
+    width: 126px;
+    height: 42px;
+}
+.btnBlue span {
+    display: block;
+}
+.btnBlue .loader {
+    display: none;
+    width: 30px;
+    margin: 6px auto;
+}

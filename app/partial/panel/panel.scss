@@ -1,0 +1,168 @@
+/*********************************************************************
+*** HEADER ***********************************************************
+*********************************************************************/
+.head {
+    background: #004c93 url(/html/assets/images/header/bars.jpg) no-repeat 100% 0%;
+    display: block;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    @include responsive('530px') {
+        background: #004c93;
+    }
+}
+
+.head h1 {
+    background: transparent url(/html/assets/images/header/bbva_logo.png) no-repeat 10px 50%;
+    font-size: 1px;
+    display: block;
+    float: left;
+    height: 60px;
+    width: 206px;
+    text-indent: -9999px;
+    @include responsive('470px') {
+        display: none;
+    }
+}
+
+.icoMenu {
+    background: transparent url(/html/assets/images/header/ico_menu.png) no-repeat 50% 50%;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 60px;
+    width: 50px;
+}
+
+.tabProveedor {
+    background: transparent url(/html/assets/images/header/mundo_proveedor.png) no-repeat 0% 50%;
+    display: block;
+    float: left;
+    height: 60px;
+    width: 167px;
+}
+
+/*********************************************************************
+*** MAIN MENU ********************************************************
+*********************************************************************/
+.mainmenu {
+    background: #4a4a4d;
+    display: block;
+    height: 100%;
+    width: 50px;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-transition: .3s all ease;
+    -moz-transition: .3s all ease;
+    -ms-transition: .3s all ease;
+    transition: .3s all ease;
+    @include responsive('600px') {
+        width: 0;
+    }
+}
+
+.mainmenu ul {
+    display: block;
+    padding-top: 60px;
+    width: 180px;
+}
+
+.mainmenu ul li {
+
+}
+
+.mainmenu ul li a {
+    font-family: "font1", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    line-height: 50px;
+    display: block;
+    border-bottom: 1px #626266 solid;
+    padding-left: 50px;
+    text-decoration: none;
+    /*text-indent: -9999px;*/
+}
+
+/* - ICONS MENU - */
+.icoHome {
+    background: transparent url(/html/assets/images/menu/ico_home.png) no-repeat 14px 50%;
+    -webkit-transition: background .5s ease 0s;
+    -moz-transition: background .5s ease 0s;
+    transition: background .5s ease 0s;
+}
+
+.icoHome:hover, .icoHome.active {
+    background: #cb1e60 url(/html/assets/images/menu/ico_home.png) no-repeat 14px 50%;
+}
+
+.icoWorld {
+    background: transparent url(/html/assets/images/menu/ico_world.png) no-repeat 14px 50%;
+    -webkit-transition: background .5s ease 0s;
+    -moz-transition: background .5s ease 0s;
+    transition: background .5s ease 0s;
+}
+
+.icoWorld:hover, .icoWorld.active {
+    background: #cb1e60 url(/html/assets/images/menu/ico_world.png) no-repeat 14px 50%;
+}
+
+.icoHand {
+    background: transparent url(/html/assets/images/menu/ico_hand.png) no-repeat 14px 50%;
+    -webkit-transition: background .5s ease 0s;
+    -moz-transition: background .5s ease 0s;
+    transition: background .5s ease 0s;
+}
+
+.icoHand:hover, .icoHand.active {
+    background: #cb1e60 url(/html/assets/images/menu/ico_hand.png) no-repeat 14px 50%;
+}
+
+.icoStar {
+    background: transparent url(/html/assets/images/menu/ico_star.png) no-repeat 14px 50%;
+    -webkit-transition: background .5s ease 0s;
+    -moz-transition: background .5s ease 0s;
+    transition: background .5s ease 0s;
+}
+
+.icoStar:hover, .icoStar.active {
+    background: #cb1e60 url(/html/assets/images/menu/ico_star.png) no-repeat 14px 50%;
+}
+
+.icoUser {
+    background: transparent url(/html/assets/images/menu/ico_user.png) no-repeat 14px 50%;
+    -webkit-transition: background .5s ease 0s;
+    -moz-transition: background .5s ease 0s;
+    transition: background .5s ease 0s;
+}
+
+.icoUser:hover, .icoUser.active {
+    background: #cb1e60 url(/html/assets/images/menu/ico_user.png) no-repeat 14px 50%;
+}
+
+.icoNote {
+    background: transparent url(/html/assets/images/menu/ico_note.png) no-repeat 14px 50%;
+    -webkit-transition: background .5s ease 0s;
+    -moz-transition: background .5s ease 0s;
+    transition: background .5s ease 0s;
+}
+
+.icoNote:hover, .icoNote.active {
+    background: #cb1e60 url(/html/assets/images/menu/ico_note.png) no-repeat 14px 50%;
+}
+
+.icoOff {
+    background: transparent url(/html/assets/images/menu/ico_off.png) no-repeat 14px 50%;
+    -webkit-transition: background .5s ease 0s;
+    -moz-transition: background .5s ease 0s;
+    transition: background .5s ease 0s;
+}
+
+.icoOff:hover, .icoOff.active {
+    background: #cb1e60 url(/html/assets/images/menu/ico_off.png) no-repeat 14px 50%;
+}

@@ -1,0 +1,80 @@
+/*********************************************************************
+*** PAGE: PARTICIPANTS ***********************************************
+*********************************************************************/
+.itemParticipant {
+    background: #ededed;
+    font-family: "font2", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #737373;
+    line-height: 16px;
+    display: block;
+    float: left;
+    border: 1px #d9d9d9 solid;
+    margin: .9%;
+    height: 180px;
+    width: 31.3333%;
+    @include responsive('1100px') {
+        width: 48.2%;
+    }
+    @include responsive('700px') {
+        float: none;
+        width: 90%;
+        margin: 10px auto;
+    }
+    @include responsive('400px') {
+        width: 100%;
+    }
+}
+
+/* - PICTURE - */
+.picParticipant {
+    cursor: pointer;
+    display: block;
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* - DESCRIPTION - */
+.desParticipant {
+    display: block;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    width: 50%;
+}
+
+.desParticipant h3 {
+    font-family: "font1", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #004c93;
+    line-height: 18px;
+    display: block;
+    padding-bottom: 5px;
+}
+
+.desParticipant h3 a {
+    color: #004c93;
+    text-decoration: none;
+}
+
+.desParticipant p span {
+    font-family: "font1", Arial, Helvetica, sans-serif;
+}
+
+.desParticipant p a {
+    color: #737373;
+    text-decoration: none;
+}
+
+.desParticipant p a:hover {
+    text-decoration: underline;
+}
+
+.marg {
+    display: block;
+    padding: 12px 12px 0px 12px;
+}

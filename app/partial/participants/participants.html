@@ -1,0 +1,36 @@
+<div ng-controller="ParticipantsCtrl">
+
+    <!--PAGE: PARTICIPANTS -->
+    <section class="wrapInner">
+        <div class="pageInner">
+            <div class="contLoad" style="display: block">
+                <div class="loader">
+                    <svg class="circular" viewBox="25 25 50 50">
+                        <circle class="pathBlue" cx="50" cy="50" r="20" fill="none" stroke-width="3"
+                                stroke-miterlimit="10"/>
+                    </svg>
+                </div>
+            </div>
+            <!--PARTICIPANTS -->
+            <div class="pagePromo" style="display: none">
+                <div class="itemParticipant" ng-repeat="item in participants">
+                    <div class="picParticipant" ng-click="participant.goDetail(item.id)" style="background-image: url({{item.imagen}})">
+                    </div>
+                    <div class="desParticipant">
+                        <div class="marg">
+                            <h3><a href="">{{item.tienda}}</a></h3>
+                            <p><span>Rubro:</span> {{item.rubro}}</p>
+                            <p><span>Telefono:</span> {{item.telefono}}</p>
+                            <p><span>Contacto:</span> {{item.contacto}}</p>
+                            <p><span>Email:</span> {{item.email}}</p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+    </section>
+
+</div>
